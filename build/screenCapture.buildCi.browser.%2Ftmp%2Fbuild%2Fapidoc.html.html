@@ -1,0 +1,1268 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/ai/browserslist#readme">browserslist (v2.1.0)</a>
+</h1>
+<h4>Share browsers list between different front-end tools, like Autoprefixer, Stylelint and babel-env-preset</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.browserslist">module browserslist</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.browserslist">
+            function <span class="apidocSignatureSpan"></span>browserslist
+            <span class="apidocSignatureSpan">(queries, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.byName">
+            function <span class="apidocSignatureSpan">browserslist.</span>byName
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.checkName">
+            function <span class="apidocSignatureSpan">browserslist.</span>checkName
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.clearCaches">
+            function <span class="apidocSignatureSpan">browserslist.</span>clearCaches
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.coverage">
+            function <span class="apidocSignatureSpan">browserslist.</span>coverage
+            <span class="apidocSignatureSpan">(browsers, country)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.findConfig">
+            function <span class="apidocSignatureSpan">browserslist.</span>findConfig
+            <span class="apidocSignatureSpan">(from)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.index">
+            function <span class="apidocSignatureSpan">browserslist.</span>index
+            <span class="apidocSignatureSpan">(queries, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.parseConfig">
+            function <span class="apidocSignatureSpan">browserslist.</span>parseConfig
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.readConfig">
+            function <span class="apidocSignatureSpan">browserslist.</span>readConfig
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.</span>aliases</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.</span>data</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.</span>defaults</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.</span>queries</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.</span>usage</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.</span>versionAliases</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.browserslist.index">module browserslist.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.index.index">
+            function <span class="apidocSignatureSpan">browserslist.</span>index
+            <span class="apidocSignatureSpan">(queries, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.index.byName">
+            function <span class="apidocSignatureSpan">browserslist.index.</span>byName
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.index.checkName">
+            function <span class="apidocSignatureSpan">browserslist.index.</span>checkName
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.index.clearCaches">
+            function <span class="apidocSignatureSpan">browserslist.index.</span>clearCaches
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.index.coverage">
+            function <span class="apidocSignatureSpan">browserslist.index.</span>coverage
+            <span class="apidocSignatureSpan">(browsers, country)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.index.findConfig">
+            function <span class="apidocSignatureSpan">browserslist.index.</span>findConfig
+            <span class="apidocSignatureSpan">(from)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.index.parseConfig">
+            function <span class="apidocSignatureSpan">browserslist.index.</span>parseConfig
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browserslist.index.readConfig">
+            function <span class="apidocSignatureSpan">browserslist.index.</span>readConfig
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.index.</span>aliases</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.index.</span>data</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.index.</span>defaults</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.index.</span>queries</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.index.</span>usage</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browserslist.index.</span>versionAliases</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.browserslist" id="apidoc.module.browserslist">module browserslist</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.browserslist" id="apidoc.element.browserslist.browserslist">
+        function <span class="apidocSignatureSpan"></span>browserslist
+        <span class="apidocSignatureSpan">(queries, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">browserslist = function (queries, opts) {
+    if ( typeof opts === 'undefined' ) opts = { };
+
+    if ( !opts.hasOwnProperty('path') ) {
+        opts.path = path.resolve('.');
+    }
+
+    if ( typeof queries === 'undefined' || queries === null ) {
+        if ( process.env.BROWSERSLIST ) {
+            queries = process.env.BROWSERSLIST;
+        } else if ( opts.config || process.env.BROWSERSLIST_CONFIG ) {
+            var file = opts.config || process.env.BROWSERSLIST_CONFIG;
+            queries = pickEnv(browserslist.readConfig(file), opts);
+        } else if ( opts.path ) {
+            queries = pickEnv(browserslist.findConfig(opts.path), opts);
+        }
+    }
+
+    if ( typeof queries === 'undefined' || queries === null ) {
+        queries = browserslist.defaults;
+    }
+
+    if ( typeof queries === 'string' ) {
+        queries = queries.split(/,\s*/);
+    }
+
+    var context = { };
+
+    var stats = getStat(opts);
+    if ( stats ) {
+        if ( typeof stats === 'string' ) {
+            try {
+                stats = JSON.parse(fs.readFileSync(stats));
+            } catch (e) {
+                error('Can\'t read ' + stats);
+            }
+        }
+        if ( 'dataByBrowser' in stats ) {
+            stats = stats.dataByBrowser;
+        }
+
+        context.customUsage = { };
+        for ( var browser in stats ) {
+            fillUsage(context.customUsage, browser, stats[browser]);
+        }
+    }
+
+    var result = [];
+
+    queries.forEach(function (selection) {
+        if ( selection.trim() === '' ) return;
+
+        var exclude = selection.indexOf('not ') === 0;
+        if ( exclude ) selection = selection.slice(4);
+
+        for ( var i in browserslist.queries ) {
+            var type  = browserslist.queries[i];
+            var match = selection.match(type.regexp);
+            if ( match ) {
+                var args = [context].concat(match.slice(1));
+                var array = type.select.apply(browserslist, args);
+                if ( exclude ) {
+                    array = array.concat(array.map(function (j) {
+                        return j.replace(/\s\d+/, ' 0');
+                    }));
+                    result = result.filter(function (j) {
+                        return array.indexOf(j) === -1;
+                    });
+                } else {
+                    result = result.concat(array);
+                }
+                return;
+            }
+        }
+
+        error('Unknown browser query `' + selection + '`');
+    });
+    result = result.map(function (i) {
+        var parts = i.split(' ');
+        var name = parts[0];
+        var version = parts[1];
+        if ( version === '0' ) {
+            return name + ' ' + browserslist.byName(name).versions[0];
+        } else {
+            return i;
+        }
+    }).sort(function (name1, name2) {
+        name1 = name1.split(' ');
+        name2 = name2.split(' ');
+        if ( name1[0] === name2[0] ) {
+            if ( FLOAT_RANGE.test(name1[1]) &amp;&amp; FLOAT_RANGE.test(name2[1]) ) {
+                return parseFloat(name2[1]) - parseFloat(name1[1]);
+            } else {
+                return compareStrings(name2[1], name1[1]);
+            }
+        } else {
+            return compareStrings(name1[0], name2[0]);
+        }
+    });
+
+    return uniq(result);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.byName" id="apidoc.element.browserslist.byName">
+        function <span class="apidocSignatureSpan">browserslist.</span>byName
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">byName = function (name) {
+    name = name.toLowerCase();
+    name = browserslist.aliases[name] || name;
+    return browserslist.data[name];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    error('Unknown browser query `' + selection + '`');
+});
+result = result.map(function (i) {
+    var parts = i.split(' ');
+    var name = parts[0];
+    var version = parts[1];
+    if ( version === '0' ) {
+        return name + ' ' + browserslist.<span class="apidocCodeKeywordSpan">byName</span>(name).versions[0];
+    } else {
+        return i;
+    }
+}).sort(function (name1, name2) {
+    name1 = name1.split(' ');
+    name2 = name2.split(' ');
+    if ( name1[0] === name2[0] ) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.checkName" id="apidoc.element.browserslist.checkName">
+        function <span class="apidocSignatureSpan">browserslist.</span>checkName
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">checkName = function (name) {
+    var data = browserslist.byName(name);
+    if ( !data ) error('Unknown browser ' + name);
+    return data;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        return selected;
+    }
+},
+
+lastByBrowser: {
+    regexp: /^last\s+(\d+)\s+(\w+)\s+versions?$/i,
+    select: function (context, versions, name) {
+        var data = browserslist.<span class="apidocCodeKeywordSpan">checkName</span>(name);
+        return data.released.slice(-versions).map(function (v) {
+            return data.name + ' ' + v;
+        });
+    }
+},
+
+globalStatistics: {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.clearCaches" id="apidoc.element.browserslist.clearCaches">
+        function <span class="apidocSignatureSpan">browserslist.</span>clearCaches
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clearCaches = function () {
+    filenessCache = {};
+    configCache = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Browserslist caches the configuration it reads from `package.json` and
+`browserslist` files, as well as knowledge about the existence of files,
+for the duration of the hosting process.
+
+To clear these caches, use:
+
+```js
+browserslist.<span class="apidocCodeKeywordSpan">clearCaches</span>();
+```
+
+To disable the caching altogether, set the `BROWSERSLIST_DISABLE_CACHE`
+environment variable.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.coverage" id="apidoc.element.browserslist.coverage">
+        function <span class="apidocSignatureSpan">browserslist.</span>coverage
+        <span class="apidocSignatureSpan">(browsers, country)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">coverage = function (browsers, country) {
+    if ( country &amp;&amp; country !== 'global' ) {
+        country = country.toUpperCase();
+        loadCountryStatistics(country);
+    } else {
+        country = 'global';
+    }
+
+    return browsers.reduce(function (all, i) {
+        var usage = browserslist.usage[country][i];
+        if ( usage === undefined ) {
+            usage = browserslist.usage[country][i.replace(/ [\d.]+$/, ' 0')];
+        }
+        return all + (usage || 0);
+    }, 0);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## 1.3.1
+* Add Safari TP support.
+
+## 1.3
+* Add coverage for specific country (by Joshua Wise).
+
+## 1.2
+* Add `browserslist.<span class="apidocCodeKeywordSpan">coverage</span>()` method.
+* Add `--coverage` and `-c` argument to CLI.
+* Add `-v` argument support to CLI.
+* Better error handling in CLI.
+
+## 1.1.3
+* Fix jspm support (by Sean Anderson).
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.findConfig" id="apidoc.element.browserslist.findConfig">
+        function <span class="apidocSignatureSpan">browserslist.</span>findConfig
+        <span class="apidocSignatureSpan">(from)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">findConfig = function (from) {
+    from = path.resolve(from);
+
+    var cacheKey = isFile(from) ? path.dirname(from) : from;
+    if ( cacheKey in configCache ) {
+        return configCache[cacheKey];
+    }
+
+    var resolved = eachParent(from, function (dir) {
+        var config = path.join(dir, 'browserslist');
+        var pkg = path.join(dir, 'package.json');
+        var rc = path.join(dir, '.browserslistrc');
+
+        var pkgBrowserslist;
+        if ( isFile(pkg) ) {
+            try {
+                pkgBrowserslist = parsePackage(pkg);
+            } catch (e) {
+                console.warn(
+                    '[Browserslist] Could not parse ' + pkg + '. ' +
+                    'Ignoring it.');
+            }
+        }
+
+        if ( isFile(config) &amp;&amp; pkgBrowserslist ) {
+            error(
+                dir + ' contains both browserslist ' +
+                'and package.json with browsers');
+        } else if ( isFile(rc) &amp;&amp; pkgBrowserslist ) {
+            error(
+                dir + ' contains both .browserslistrc ' +
+                'and package.json with browsers');
+        } else if ( isFile(config) &amp;&amp; isFile(rc) ) {
+            error(dir + ' contains both .browserslistrc and browserslist');
+        } else if ( isFile(config) ) {
+            return browserslist.readConfig(config);
+        } else if ( isFile(rc) ) {
+            return browserslist.readConfig(rc);
+        } else if ( pkgBrowserslist ) {
+            return pkgBrowserslist;
+        }
+    });
+    if ( cacheEnabled ) {
+        configCache[cacheKey] = resolved;
+    }
+    return resolved;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if ( typeof queries === 'undefined' || queries === null ) {
+    if ( process.env.BROWSERSLIST ) {
+        queries = process.env.BROWSERSLIST;
+    } else if ( opts.config || process.env.BROWSERSLIST_CONFIG ) {
+        var file = opts.config || process.env.BROWSERSLIST_CONFIG;
+        queries = pickEnv(browserslist.readConfig(file), opts);
+    } else if ( opts.path ) {
+        queries = pickEnv(browserslist.<span class="apidocCodeKeywordSpan">findConfig</span>(opts.path), opts);
+    }
+}
+
+if ( typeof queries === 'undefined' || queries === null ) {
+    queries = browserslist.defaults;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.index" id="apidoc.element.browserslist.index">
+        function <span class="apidocSignatureSpan">browserslist.</span>index
+        <span class="apidocSignatureSpan">(queries, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">index = function (queries, opts) {
+    if ( typeof opts === 'undefined' ) opts = { };
+
+    if ( !opts.hasOwnProperty('path') ) {
+        opts.path = path.resolve('.');
+    }
+
+    if ( typeof queries === 'undefined' || queries === null ) {
+        if ( process.env.BROWSERSLIST ) {
+            queries = process.env.BROWSERSLIST;
+        } else if ( opts.config || process.env.BROWSERSLIST_CONFIG ) {
+            var file = opts.config || process.env.BROWSERSLIST_CONFIG;
+            queries = pickEnv(browserslist.readConfig(file), opts);
+        } else if ( opts.path ) {
+            queries = pickEnv(browserslist.findConfig(opts.path), opts);
+        }
+    }
+
+    if ( typeof queries === 'undefined' || queries === null ) {
+        queries = browserslist.defaults;
+    }
+
+    if ( typeof queries === 'string' ) {
+        queries = queries.split(/,\s*/);
+    }
+
+    var context = { };
+
+    var stats = getStat(opts);
+    if ( stats ) {
+        if ( typeof stats === 'string' ) {
+            try {
+                stats = JSON.parse(fs.readFileSync(stats));
+            } catch (e) {
+                error('Can\'t read ' + stats);
+            }
+        }
+        if ( 'dataByBrowser' in stats ) {
+            stats = stats.dataByBrowser;
+        }
+
+        context.customUsage = { };
+        for ( var browser in stats ) {
+            fillUsage(context.customUsage, browser, stats[browser]);
+        }
+    }
+
+    var result = [];
+
+    queries.forEach(function (selection) {
+        if ( selection.trim() === '' ) return;
+
+        var exclude = selection.indexOf('not ') === 0;
+        if ( exclude ) selection = selection.slice(4);
+
+        for ( var i in browserslist.queries ) {
+            var type  = browserslist.queries[i];
+            var match = selection.match(type.regexp);
+            if ( match ) {
+                var args = [context].concat(match.slice(1));
+                var array = type.select.apply(browserslist, args);
+                if ( exclude ) {
+                    array = array.concat(array.map(function (j) {
+                        return j.replace(/\s\d+/, ' 0');
+                    }));
+                    result = result.filter(function (j) {
+                        return array.indexOf(j) === -1;
+                    });
+                } else {
+                    result = result.concat(array);
+                }
+                return;
+            }
+        }
+
+        error('Unknown browser query `' + selection + '`');
+    });
+    result = result.map(function (i) {
+        var parts = i.split(' ');
+        var name = parts[0];
+        var version = parts[1];
+        if ( version === '0' ) {
+            return name + ' ' + browserslist.byName(name).versions[0];
+        } else {
+            return i;
+        }
+    }).sort(function (name1, name2) {
+        name1 = name1.split(' ');
+        name2 = name2.split(' ');
+        if ( name1[0] === name2[0] ) {
+            if ( FLOAT_RANGE.test(name1[1]) &amp;&amp; FLOAT_RANGE.test(name2[1]) ) {
+                return parseFloat(name2[1]) - parseFloat(name1[1]);
+            } else {
+                return compareStrings(name2[1], name1[1]);
+            }
+        } else {
+            return compareStrings(name1[0], name2[0]);
+        }
+    });
+
+    return uniq(result);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.parseConfig" id="apidoc.element.browserslist.parseConfig">
+        function <span class="apidocSignatureSpan">browserslist.</span>parseConfig
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parseConfig = function (string) {
+    var result = { defaults: [] };
+    var section = 'defaults';
+
+    string.toString()
+        .replace(/#[^\n]*/g, '')
+        .split(/\n/)
+        .map(function (line) {
+            return line.trim();
+        })
+        .filter(function (line) {
+            return line !== '';
+        })
+        .forEach(function (line) {
+            if ( IS_SECTION.test(line) ) {
+                section = line.match(IS_SECTION)[1].trim();
+                result[section] = result[section] || [];
+            } else {
+                result[section].push(line);
+            }
+        });
+
+    return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+// Read and parse config
+browserslist.readConfig = function (file) {
+if ( !isFile(file) ) {
+    error('Can\'t read ' + file + ' config');
+}
+return browserslist.<span class="apidocCodeKeywordSpan">parseConfig</span>(fs.readFileSync(file));
+};
+
+// Find config, read file and parse it
+browserslist.findConfig = function (from) {
+from = path.resolve(from);
+
+var cacheKey = isFile(from) ? path.dirname(from) : from;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.readConfig" id="apidoc.element.browserslist.readConfig">
+        function <span class="apidocSignatureSpan">browserslist.</span>readConfig
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">readConfig = function (file) {
+    if ( !isFile(file) ) {
+        error('Can\'t read ' + file + ' config');
+    }
+    return browserslist.parseConfig(fs.readFileSync(file));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+if ( typeof queries === 'undefined' || queries === null ) {
+    if ( process.env.BROWSERSLIST ) {
+        queries = process.env.BROWSERSLIST;
+    } else if ( opts.config || process.env.BROWSERSLIST_CONFIG ) {
+        var file = opts.config || process.env.BROWSERSLIST_CONFIG;
+        queries = pickEnv(browserslist.<span class="apidocCodeKeywordSpan">readConfig</span>(file), opts);
+    } else if ( opts.path ) {
+        queries = pickEnv(browserslist.findConfig(opts.path), opts);
+    }
+}
+
+if ( typeof queries === 'undefined' || queries === null ) {
+    queries = browserslist.defaults;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.browserslist.index" id="apidoc.module.browserslist.index">module browserslist.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.index.index" id="apidoc.element.browserslist.index.index">
+        function <span class="apidocSignatureSpan">browserslist.</span>index
+        <span class="apidocSignatureSpan">(queries, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">index = function (queries, opts) {
+    if ( typeof opts === 'undefined' ) opts = { };
+
+    if ( !opts.hasOwnProperty('path') ) {
+        opts.path = path.resolve('.');
+    }
+
+    if ( typeof queries === 'undefined' || queries === null ) {
+        if ( process.env.BROWSERSLIST ) {
+            queries = process.env.BROWSERSLIST;
+        } else if ( opts.config || process.env.BROWSERSLIST_CONFIG ) {
+            var file = opts.config || process.env.BROWSERSLIST_CONFIG;
+            queries = pickEnv(browserslist.readConfig(file), opts);
+        } else if ( opts.path ) {
+            queries = pickEnv(browserslist.findConfig(opts.path), opts);
+        }
+    }
+
+    if ( typeof queries === 'undefined' || queries === null ) {
+        queries = browserslist.defaults;
+    }
+
+    if ( typeof queries === 'string' ) {
+        queries = queries.split(/,\s*/);
+    }
+
+    var context = { };
+
+    var stats = getStat(opts);
+    if ( stats ) {
+        if ( typeof stats === 'string' ) {
+            try {
+                stats = JSON.parse(fs.readFileSync(stats));
+            } catch (e) {
+                error('Can\'t read ' + stats);
+            }
+        }
+        if ( 'dataByBrowser' in stats ) {
+            stats = stats.dataByBrowser;
+        }
+
+        context.customUsage = { };
+        for ( var browser in stats ) {
+            fillUsage(context.customUsage, browser, stats[browser]);
+        }
+    }
+
+    var result = [];
+
+    queries.forEach(function (selection) {
+        if ( selection.trim() === '' ) return;
+
+        var exclude = selection.indexOf('not ') === 0;
+        if ( exclude ) selection = selection.slice(4);
+
+        for ( var i in browserslist.queries ) {
+            var type  = browserslist.queries[i];
+            var match = selection.match(type.regexp);
+            if ( match ) {
+                var args = [context].concat(match.slice(1));
+                var array = type.select.apply(browserslist, args);
+                if ( exclude ) {
+                    array = array.concat(array.map(function (j) {
+                        return j.replace(/\s\d+/, ' 0');
+                    }));
+                    result = result.filter(function (j) {
+                        return array.indexOf(j) === -1;
+                    });
+                } else {
+                    result = result.concat(array);
+                }
+                return;
+            }
+        }
+
+        error('Unknown browser query `' + selection + '`');
+    });
+    result = result.map(function (i) {
+        var parts = i.split(' ');
+        var name = parts[0];
+        var version = parts[1];
+        if ( version === '0' ) {
+            return name + ' ' + browserslist.byName(name).versions[0];
+        } else {
+            return i;
+        }
+    }).sort(function (name1, name2) {
+        name1 = name1.split(' ');
+        name2 = name2.split(' ');
+        if ( name1[0] === name2[0] ) {
+            if ( FLOAT_RANGE.test(name1[1]) &amp;&amp; FLOAT_RANGE.test(name2[1]) ) {
+                return parseFloat(name2[1]) - parseFloat(name1[1]);
+            } else {
+                return compareStrings(name2[1], name1[1]);
+            }
+        } else {
+            return compareStrings(name1[0], name2[0]);
+        }
+    });
+
+    return uniq(result);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.index.byName" id="apidoc.element.browserslist.index.byName">
+        function <span class="apidocSignatureSpan">browserslist.index.</span>byName
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">byName = function (name) {
+    name = name.toLowerCase();
+    name = browserslist.aliases[name] || name;
+    return browserslist.data[name];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    error('Unknown browser query `' + selection + '`');
+});
+result = result.map(function (i) {
+    var parts = i.split(' ');
+    var name = parts[0];
+    var version = parts[1];
+    if ( version === '0' ) {
+        return name + ' ' + browserslist.<span class="apidocCodeKeywordSpan">byName</span>(name).versions[0];
+    } else {
+        return i;
+    }
+}).sort(function (name1, name2) {
+    name1 = name1.split(' ');
+    name2 = name2.split(' ');
+    if ( name1[0] === name2[0] ) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.index.checkName" id="apidoc.element.browserslist.index.checkName">
+        function <span class="apidocSignatureSpan">browserslist.index.</span>checkName
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">checkName = function (name) {
+    var data = browserslist.byName(name);
+    if ( !data ) error('Unknown browser ' + name);
+    return data;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        return selected;
+    }
+},
+
+lastByBrowser: {
+    regexp: /^last\s+(\d+)\s+(\w+)\s+versions?$/i,
+    select: function (context, versions, name) {
+        var data = browserslist.<span class="apidocCodeKeywordSpan">checkName</span>(name);
+        return data.released.slice(-versions).map(function (v) {
+            return data.name + ' ' + v;
+        });
+    }
+},
+
+globalStatistics: {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.index.clearCaches" id="apidoc.element.browserslist.index.clearCaches">
+        function <span class="apidocSignatureSpan">browserslist.index.</span>clearCaches
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clearCaches = function () {
+    filenessCache = {};
+    configCache = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Browserslist caches the configuration it reads from `package.json` and
+`browserslist` files, as well as knowledge about the existence of files,
+for the duration of the hosting process.
+
+To clear these caches, use:
+
+```js
+browserslist.<span class="apidocCodeKeywordSpan">clearCaches</span>();
+```
+
+To disable the caching altogether, set the `BROWSERSLIST_DISABLE_CACHE`
+environment variable.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.index.coverage" id="apidoc.element.browserslist.index.coverage">
+        function <span class="apidocSignatureSpan">browserslist.index.</span>coverage
+        <span class="apidocSignatureSpan">(browsers, country)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">coverage = function (browsers, country) {
+    if ( country &amp;&amp; country !== 'global' ) {
+        country = country.toUpperCase();
+        loadCountryStatistics(country);
+    } else {
+        country = 'global';
+    }
+
+    return browsers.reduce(function (all, i) {
+        var usage = browserslist.usage[country][i];
+        if ( usage === undefined ) {
+            usage = browserslist.usage[country][i.replace(/ [\d.]+$/, ' 0')];
+        }
+        return all + (usage || 0);
+    }, 0);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## 1.3.1
+* Add Safari TP support.
+
+## 1.3
+* Add coverage for specific country (by Joshua Wise).
+
+## 1.2
+* Add `browserslist.<span class="apidocCodeKeywordSpan">coverage</span>()` method.
+* Add `--coverage` and `-c` argument to CLI.
+* Add `-v` argument support to CLI.
+* Better error handling in CLI.
+
+## 1.1.3
+* Fix jspm support (by Sean Anderson).
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.index.findConfig" id="apidoc.element.browserslist.index.findConfig">
+        function <span class="apidocSignatureSpan">browserslist.index.</span>findConfig
+        <span class="apidocSignatureSpan">(from)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">findConfig = function (from) {
+    from = path.resolve(from);
+
+    var cacheKey = isFile(from) ? path.dirname(from) : from;
+    if ( cacheKey in configCache ) {
+        return configCache[cacheKey];
+    }
+
+    var resolved = eachParent(from, function (dir) {
+        var config = path.join(dir, 'browserslist');
+        var pkg = path.join(dir, 'package.json');
+        var rc = path.join(dir, '.browserslistrc');
+
+        var pkgBrowserslist;
+        if ( isFile(pkg) ) {
+            try {
+                pkgBrowserslist = parsePackage(pkg);
+            } catch (e) {
+                console.warn(
+                    '[Browserslist] Could not parse ' + pkg + '. ' +
+                    'Ignoring it.');
+            }
+        }
+
+        if ( isFile(config) &amp;&amp; pkgBrowserslist ) {
+            error(
+                dir + ' contains both browserslist ' +
+                'and package.json with browsers');
+        } else if ( isFile(rc) &amp;&amp; pkgBrowserslist ) {
+            error(
+                dir + ' contains both .browserslistrc ' +
+                'and package.json with browsers');
+        } else if ( isFile(config) &amp;&amp; isFile(rc) ) {
+            error(dir + ' contains both .browserslistrc and browserslist');
+        } else if ( isFile(config) ) {
+            return browserslist.readConfig(config);
+        } else if ( isFile(rc) ) {
+            return browserslist.readConfig(rc);
+        } else if ( pkgBrowserslist ) {
+            return pkgBrowserslist;
+        }
+    });
+    if ( cacheEnabled ) {
+        configCache[cacheKey] = resolved;
+    }
+    return resolved;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if ( typeof queries === 'undefined' || queries === null ) {
+    if ( process.env.BROWSERSLIST ) {
+        queries = process.env.BROWSERSLIST;
+    } else if ( opts.config || process.env.BROWSERSLIST_CONFIG ) {
+        var file = opts.config || process.env.BROWSERSLIST_CONFIG;
+        queries = pickEnv(browserslist.readConfig(file), opts);
+    } else if ( opts.path ) {
+        queries = pickEnv(browserslist.<span class="apidocCodeKeywordSpan">findConfig</span>(opts.path), opts);
+    }
+}
+
+if ( typeof queries === 'undefined' || queries === null ) {
+    queries = browserslist.defaults;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.index.parseConfig" id="apidoc.element.browserslist.index.parseConfig">
+        function <span class="apidocSignatureSpan">browserslist.index.</span>parseConfig
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parseConfig = function (string) {
+    var result = { defaults: [] };
+    var section = 'defaults';
+
+    string.toString()
+        .replace(/#[^\n]*/g, '')
+        .split(/\n/)
+        .map(function (line) {
+            return line.trim();
+        })
+        .filter(function (line) {
+            return line !== '';
+        })
+        .forEach(function (line) {
+            if ( IS_SECTION.test(line) ) {
+                section = line.match(IS_SECTION)[1].trim();
+                result[section] = result[section] || [];
+            } else {
+                result[section].push(line);
+            }
+        });
+
+    return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+// Read and parse config
+browserslist.readConfig = function (file) {
+if ( !isFile(file) ) {
+    error('Can\'t read ' + file + ' config');
+}
+return browserslist.<span class="apidocCodeKeywordSpan">parseConfig</span>(fs.readFileSync(file));
+};
+
+// Find config, read file and parse it
+browserslist.findConfig = function (from) {
+from = path.resolve(from);
+
+var cacheKey = isFile(from) ? path.dirname(from) : from;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browserslist.index.readConfig" id="apidoc.element.browserslist.index.readConfig">
+        function <span class="apidocSignatureSpan">browserslist.index.</span>readConfig
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">readConfig = function (file) {
+    if ( !isFile(file) ) {
+        error('Can\'t read ' + file + ' config');
+    }
+    return browserslist.parseConfig(fs.readFileSync(file));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+if ( typeof queries === 'undefined' || queries === null ) {
+    if ( process.env.BROWSERSLIST ) {
+        queries = process.env.BROWSERSLIST;
+    } else if ( opts.config || process.env.BROWSERSLIST_CONFIG ) {
+        var file = opts.config || process.env.BROWSERSLIST_CONFIG;
+        queries = pickEnv(browserslist.<span class="apidocCodeKeywordSpan">readConfig</span>(file), opts);
+    } else if ( opts.path ) {
+        queries = pickEnv(browserslist.findConfig(opts.path), opts);
+    }
+}
+
+if ( typeof queries === 'undefined' || queries === null ) {
+    queries = browserslist.defaults;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
